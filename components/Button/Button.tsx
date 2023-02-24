@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { FC } from 'react'
+import classNames from 'classnames'
 
-const Button = () => {
+interface ButtonProps {
+  children: React.ReactNode
+  className?: string
+  htmlType?: 'button' | 'reset' | 'submit'
+  onClick?: (event: any) => void
+}
+
+const Button: FC<ButtonProps> = (props) => {
+  const { children, className, htmlType, onClick } = props
   return (
-    <button className='bg-white hover:bg-gray-200 text-black text-center py-2 px-4 rounded'>
-      Button
+    <button
+      type={htmlType || 'button'}
+      className={classNames(className, 'rounded-md p-2 transition')}
+      onClick={onClick}
+    >
+      {children}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button
