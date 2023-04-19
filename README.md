@@ -1,3 +1,6 @@
+![screencapture-nextjs-tailwind-dark-mode-vercel-app-2023-04-19-15_15_03](https://user-images.githubusercontent.com/68588944/233013150-22487544-dc9b-4e7a-aee3-ad1c94e87c2a.gif)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
